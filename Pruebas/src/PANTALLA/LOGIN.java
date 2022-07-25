@@ -28,6 +28,7 @@ public class LOGIN extends javax.swing.JFrame {
 
         lblResgistro = new javax.swing.JLabel();
         btnIngresar = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,15 +39,19 @@ public class LOGIN extends javax.swing.JFrame {
         btnIngresar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         btnIngresar.setText("Ingresar");
 
+        btnSalir.setText("Salir");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(178, 178, 178)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnIngresar)
-                    .addComponent(lblResgistro, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSalir)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnIngresar)
+                        .addComponent(lblResgistro, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(190, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -56,7 +61,9 @@ public class LOGIN extends javax.swing.JFrame {
                 .addComponent(lblResgistro)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
                 .addComponent(btnIngresar)
-                .addGap(121, 121, 121))
+                .addGap(18, 18, 18)
+                .addComponent(btnSalir)
+                .addGap(81, 81, 81))
         );
 
         pack();
@@ -99,6 +106,7 @@ public class LOGIN extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresar;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel lblResgistro;
     // End of variables declaration//GEN-END:variables
 }
